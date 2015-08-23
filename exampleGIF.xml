@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+    <ModulePrefs title="Google Gadget to add gif animation within Google Sites"></ModulePrefs>
     <Module>
         <UserPref name="File" display_name="File (url of gif file)" required="true" default_value="http://imgur.com/8ZflM19" />
         <UserPref name="Text" display_name="Text (alt and title)" required="true" default_value="Title" />
