@@ -1,0 +1,24 @@
+.button {
+    float: left;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+    background-color: #bbf;
+    &:hover {
+        background-color: #ddf;
+    }
+    text-decoration: none;
+    color: black;
+}
+
+.large {
+    font-size: 40px;
+}
+
+.medium {
+    font-size: 30px;
+}
+
+.small {
+    font-size: 20px;
+}
