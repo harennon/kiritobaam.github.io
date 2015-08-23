@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <Module>
+        <UserPref name="File" display_name="File (url of gif file)" required="true" default_value="http://imgur.com/8ZflM19" />
+        <UserPref name="Text" display_name="Text (alt and title)" required="true" default_value="Title" />
+        <UserPref name="ContainerCol" display_name="Container Color" required="true" default_value="#fff" />
+        <Content type="html">
+            <![CDATA[
+
+<style type="text/css">
+body
+{
+background: __UP_ContainerCol__;
+padding: 0;
+margin:0;
+}
+
+</style>
+
+<img id="my_img" src="" alt="" title="" style="border: 0 none;"/>
+
+<script type="text/javascript">
+
+var prefs = new _IG_Prefs(__MODULE_ID__);
+
+var s_url = _trim(prefs.getString("File"));
+s_url = s_url.replace("'"," ");
+s_url = s_url.replace(" ","%20");
+
+var s_tex = _trim(prefs.getString("Text"));
+s_tex = s_tex.replace("'"," ");
+
+_gel("my_img").src=s_url;
+_gel("my_img").alt=s_tex;
+_gel("my_img").title=s_tex;
+
+</script>
+]]>
+        </Content>
+    </Module>
